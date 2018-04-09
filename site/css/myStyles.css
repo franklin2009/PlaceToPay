@@ -1,0 +1,8 @@
+.has-feedback label ~ .form-control-feedback{
+	top: 25px;
+	right: 20px;
+}
+
+.has-feedback .smk-error-msg {
+	right: 20px;
+}
