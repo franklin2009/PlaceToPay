@@ -11,30 +11,27 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+
+
+
+        <h2>Ejemplo Implementación PlaceToPay</h2>
+        <p>Ejercicio a modo de pruebas para implentar la pasarela de pago pse de placetopay</p>
+        
+		<p>Observaciones: </p>
+		<ul>
+			<li> La implentación asume que el pagador y comprador es la misma persona, solo se piden los datos de comprador </li>
+			<li> El monto del cobro es simulado por un valor de 20000.00 sin impuesto y extras (demoTransactionRequest) </li>
+			<li> Los datos de la persona beneficiaria son simulados (demoShipping) </li>
+			<li> El formulario tiene valiadaciones de datos a nivel de frontend y backend</li>
+			<li> La transacciones son alamcenadas a nivel de base de datos en la tabla <b>placetopays</b> </li>
+			<li> La lista de banco se guarda en cache por 24 horas </li>
+			<li> La aplicación esta hecha con php laravel v. 5.4 </li>
+			<li> Los datos de configuracion de base de datos correponden a: DB_DATABASE: pagos_ptp  |  DB_USERNAME: root  | DB_PASSWORD:   </li>
+			<li> Se debe dar permiso de escritura/lectura sobre el directorio /storage, aqui se almacena la cache</li>
+			<li> Configure la base de datos y ejecute:  php artisan migrate </li>
+			<li> Hay 10 casos de prueba. Ver link:  <b>Test / Casos de prueba</b> </li>
+		</ul>
