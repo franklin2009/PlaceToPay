@@ -15,15 +15,11 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
-
-
-
-        <h2>Ejemplo Implementación PlaceToPay</h2>
-        <p>Ejercicio a modo de pruebas para implentar la pasarela de pago pse de placetopay</p>
-        
-		<p>Observaciones: </p>
-		<ul>
-			<li> La implentación asume que el pagador y comprador es la misma persona, solo se piden los datos de comprador </li>
+<h2>Ejemplo Implementación PlaceToPay</h2>
+<p>Ejercicio a modo de pruebas para implentar la pasarela de pago pse de placetopay</p>
+<p>Observaciones: </p>
+<ul>
+<li> La implentación asume que el pagador y comprador es la misma persona, solo se piden los datos de comprador </li>
 			<li> El monto del cobro es simulado por un valor de 20000.00 sin impuesto y extras (demoTransactionRequest) </li>
 			<li> Los datos de la persona beneficiaria son simulados (demoShipping) </li>
 			<li> El formulario tiene valiadaciones de datos a nivel de frontend y backend</li>
@@ -34,4 +30,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 			<li> Se debe dar permiso de escritura/lectura sobre el directorio /storage, aqui se almacena la cache</li>
 			<li> Configure la base de datos y ejecute:  php artisan migrate </li>
 			<li> Hay 10 casos de prueba. Ver link:  <b>Test / Casos de prueba</b> </li>
-		</ul>
+</ul>
